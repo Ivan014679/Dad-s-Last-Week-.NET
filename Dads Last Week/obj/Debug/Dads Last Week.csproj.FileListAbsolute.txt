@@ -1,0 +1,79 @@
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\obj\Debug\Dads Last Week.csprojAssemblyReference.cache
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\obj\Debug\Dads Last Week.csproj.CoreCompileInputs.cache
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\Dads Last Week.dll.config
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\Dads Last Week.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\Dads Last Week.pdb
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\csc.exe
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\csc.exe.config
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\csc.rsp
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\csi.exe
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\csi.exe.config
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\csi.rsp
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.Managed.Core.targets
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.AppContext.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Collections.Immutable.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Console.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.IO.Compression.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.IO.FileSystem.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.IO.Pipes.AccessControl.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.IO.Pipes.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Reflection.Metadata.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Security.AccessControl.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Security.Claims.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Security.Principal.Windows.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.ValueTuple.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Xml.XmlDocument.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Xml.XPath.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\vbc.exe
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\vbc.exe.config
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\vbc.rsp
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\VBCSCompiler.exe
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\roslyn\VBCSCompiler.exe.config
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\EntityFramework.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\EntityFramework.SqlServer.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\Microsoft.Web.Infrastructure.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Helpers.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Mvc.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Razor.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Webpages.Deployment.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Webpages.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Webpages.Razor.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\EntityFramework.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\EntityFramework.SqlServer.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Razor.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Webpages.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Webpages.Deployment.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Webpages.Razor.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Helpers.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\System.Web.Mvc.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\es\System.Web.Razor.resources.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\es\System.Web.Webpages.resources.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\es\System.Web.Webpages.Deployment.resources.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\es\System.Web.Webpages.Razor.resources.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\es\System.Web.Helpers.resources.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\bin\es\System.Web.Mvc.resources.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\obj\Debug\Dads Last Week.csproj.CopyComplete
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\obj\Debug\Dads Last Week.dll
+H:\SEPTIMO\Frameworks\Dads Last Week\Dads Last Week\obj\Debug\Dads Last Week.pdb

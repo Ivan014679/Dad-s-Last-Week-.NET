@@ -1,0 +1,35 @@
+﻿@model Dads_Last_Week.Models.JugadorModel
+@{
+    ViewBag.Title = "Iniciar sesión";
+    ViewBag.TipoContenedor = "contenedornormal";
+}
+
+<h2><font face="Old English Text MT">Iniciar sesión</font></h2>
+@using (Html.BeginForm("Index", "Jugador", FormMethod.Post))
+{
+    <div class="form-group" align="justify">
+        @Html.LabelFor(j => j.NombreUsuario)
+        @Html.TextBoxFor(j => j.NombreUsuario, new { @class = "form-control", @placeholder = "Ingrese su nombre de usuario" })
+        @Html.ValidationMessageFor(j => j.NombreUsuario, "", new { @class = "form-text text-danger" })
+    </div>
+    <div class="form-group" align="justify">
+        @Html.LabelFor(j => j.Contrasena)
+        @Html.TextBoxFor(j => j.Contrasena, new { @class = "form-control", @placeholder = "Ingrese su contraseña", @type = "password" })
+        @Html.ValidationMessageFor(j => j.Contrasena, "", new { @class = "form-text text-danger" })
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-sucess">Iniciar sesión</button>
+    </div>
+}
+@{
+    if (!string.IsNullOrEmpty(ViewBag.error))
+    {
+        <script>
+            alert('El nombre de usuario o la contraseña son incorrectos.');
+            document.location = "Jugador/Index";
+        </script>
+    }
+}
+
+<button onclick="location.href='@Url.Action("CrearCuenta", "Jugador")'" class="btn btn-sucess">Crear cuenta</button>

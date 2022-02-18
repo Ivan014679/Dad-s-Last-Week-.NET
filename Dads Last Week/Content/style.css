@@ -1,0 +1,58 @@
+﻿.contenedorjuego {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    background-image: url("images/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border-radius: 05px;
+}
+
+.contenedornormal {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("images/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border-radius: 05px;
+}
+
+.contenedor2 {
+    text-align: center;
+    font-family: 'Agency FB';
+    margin: 70px;
+}
+
+.cointainer img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="password"] {
+    /*width: 1000px;*/
+    border-bottom: solid .1rem #D8D8D8;
+    font-family: Century Gothic; /* para cambiar tipo de fuente*/
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+
+.boton-entrar {
+    padding: 15px 30px;
+    cursor: pointer;
+    color: #fff; /*color de las letras en este caso blanco*/
+    border: none;
+    font-family: Century Gothic; /* para cambiar tipo de fuente*/
+    background-color: #FF5733;
+    border-bottom: 4px solid #C54327; /*para darle al boton una especie de base*/
+    margin-bottom: 20px;
+}
+
+.abisponblanco {
+    color: #fff;
+}

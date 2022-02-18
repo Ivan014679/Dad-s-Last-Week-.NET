@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DadsLastWeekModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Decision">
+    <Key>
+      <PropertyRef Name="Id_Decision" />
+    </Key>
+    <Property Name="Id_Decision" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Texto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Dia" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Porcentaje_Salud" Type="Int16" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Evento_Final" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Left" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Right" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Decision1" Relationship="Self.FK_Decision_ToDecisionLeft" FromRole="Decision" ToRole="Decision1" />
+    <NavigationProperty Name="Decision2" Relationship="Self.FK_Decision_ToDecisionLeft" FromRole="Decision1" ToRole="Decision" />
+    <NavigationProperty Name="Decision11" Relationship="Self.FK_Decision_ToDecisionRight" FromRole="Decision" ToRole="Decision1" />
+    <NavigationProperty Name="Decision3" Relationship="Self.FK_Decision_ToDecisionRight" FromRole="Decision1" ToRole="Decision" />
+    <NavigationProperty Name="Dia1" Relationship="Self.FK_Decision_ToDia" FromRole="Decision" ToRole="Dia" />
+    <NavigationProperty Name="Estadistica" Relationship="Self.FK_Estadistica_ToDecision" FromRole="Decision" ToRole="Estadistica" />
+    <NavigationProperty Name="Jugador" Relationship="Self.FK_Jugador_ToDecision" FromRole="Decision" ToRole="Jugador" />
+    <NavigationProperty Name="Objeto" Relationship="Self.Decision_Has_Objeto" FromRole="Decision" ToRole="Objeto" />
+  </EntityType>
+  <EntityType Name="Dia">
+    <Key>
+      <PropertyRef Name="Id_Dia" />
+    </Key>
+    <Property Name="Id_Dia" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Nom_Dia" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Decision" Relationship="Self.FK_Decision_ToDia" FromRole="Dia" ToRole="Decision" />
+    <NavigationProperty Name="Jugador" Relationship="Self.FK_Jugador_ToDia" FromRole="Dia" ToRole="Jugador" />
+  </EntityType>
+  <EntityType Name="Estadistica">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Jugador" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Nom_Personaje" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Porcentaje_Salud" Type="Int16" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Decision_Final" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Decision" Relationship="Self.FK_Estadistica_ToDecision" FromRole="Estadistica" ToRole="Decision" />
+    <NavigationProperty Name="Jugador1" Relationship="Self.FK_Estadistica_ToJugador" FromRole="Estadistica" ToRole="Jugador" />
+  </EntityType>
+  <EntityType Name="Jugador">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Nom_Usuario" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Nom_Personaje" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dia" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Decision" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Decision1" Relationship="Self.FK_Jugador_ToDecision" FromRole="Jugador" ToRole="Decision" />
+    <NavigationProperty Name="Dia1" Relationship="Self.FK_Jugador_ToDia" FromRole="Jugador" ToRole="Dia" />
+    <NavigationProperty Name="Estadistica" Relationship="Self.FK_Estadistica_ToJugador" FromRole="Jugador" ToRole="Estadistica" />
+  </EntityType>
+  <EntityType Name="Objeto">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Decision" Relationship="Self.Decision_Has_Objeto" FromRole="Objeto" ToRole="Decision" />
+  </EntityType>
+  <Association Name="FK_Decision_ToDecisionLeft">
+    <End Role="Decision" Type="Self.Decision" Multiplicity="0..1" />
+    <End Role="Decision1" Type="Self.Decision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Decision">
+        <PropertyRef Name="Id_Decision" />
+      </Principal>
+      <Dependent Role="Decision1">
+        <PropertyRef Name="Left" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Decision_ToDecisionRight">
+    <End Role="Decision" Type="Self.Decision" Multiplicity="0..1" />
+    <End Role="Decision1" Type="Self.Decision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Decision">
+        <PropertyRef Name="Id_Decision" />
+      </Principal>
+      <Dependent Role="Decision1">
+        <PropertyRef Name="Right" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Decision_ToDia">
+    <End Role="Dia" Type="Self.Dia" Multiplicity="1" />
+    <End Role="Decision" Type="Self.Decision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dia">
+        <PropertyRef Name="Id_Dia" />
+      </Principal>
+      <Dependent Role="Decision">
+        <PropertyRef Name="Dia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estadistica_ToDecision">
+    <End Role="Decision" Type="Self.Decision" Multiplicity="1" />
+    <End Role="Estadistica" Type="Self.Estadistica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Decision">
+        <PropertyRef Name="Id_Decision" />
+      </Principal>
+      <Dependent Role="Estadistica">
+        <PropertyRef Name="Decision_Final" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jugador_ToDecision">
+    <End Role="Decision" Type="Self.Decision" Multiplicity="1" />
+    <End Role="Jugador" Type="Self.Jugador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Decision">
+        <PropertyRef Name="Id_Decision" />
+      </Principal>
+      <Dependent Role="Jugador">
+        <PropertyRef Name="Decision" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jugador_ToDia">
+    <End Role="Dia" Type="Self.Dia" Multiplicity="1" />
+    <End Role="Jugador" Type="Self.Jugador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dia">
+        <PropertyRef Name="Id_Dia" />
+      </Principal>
+      <Dependent Role="Jugador">
+        <PropertyRef Name="Dia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estadistica_ToJugador">
+    <End Role="Jugador" Type="Self.Jugador" Multiplicity="1" />
+    <End Role="Estadistica" Type="Self.Estadistica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jugador">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Estadistica">
+        <PropertyRef Name="Jugador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Decision_Has_Objeto">
+    <End Role="Decision" Type="Self.Decision" Multiplicity="*" />
+    <End Role="Objeto" Type="Self.Objeto" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="DadsLastWeekEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Decision" EntityType="Self.Decision" />
+    <EntitySet Name="Dia" EntityType="Self.Dia" />
+    <EntitySet Name="Estadistica" EntityType="Self.Estadistica" />
+    <EntitySet Name="Jugador" EntityType="Self.Jugador" />
+    <EntitySet Name="Objeto" EntityType="Self.Objeto" />
+    <AssociationSet Name="FK_Decision_ToDecisionLeft" Association="Self.FK_Decision_ToDecisionLeft">
+      <End Role="Decision" EntitySet="Decision" />
+      <End Role="Decision1" EntitySet="Decision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Decision_ToDecisionRight" Association="Self.FK_Decision_ToDecisionRight">
+      <End Role="Decision" EntitySet="Decision" />
+      <End Role="Decision1" EntitySet="Decision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Decision_ToDia" Association="Self.FK_Decision_ToDia">
+      <End Role="Dia" EntitySet="Dia" />
+      <End Role="Decision" EntitySet="Decision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estadistica_ToDecision" Association="Self.FK_Estadistica_ToDecision">
+      <End Role="Decision" EntitySet="Decision" />
+      <End Role="Estadistica" EntitySet="Estadistica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jugador_ToDecision" Association="Self.FK_Jugador_ToDecision">
+      <End Role="Decision" EntitySet="Decision" />
+      <End Role="Jugador" EntitySet="Jugador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jugador_ToDia" Association="Self.FK_Jugador_ToDia">
+      <End Role="Dia" EntitySet="Dia" />
+      <End Role="Jugador" EntitySet="Jugador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estadistica_ToJugador" Association="Self.FK_Estadistica_ToJugador">
+      <End Role="Jugador" EntitySet="Jugador" />
+      <End Role="Estadistica" EntitySet="Estadistica" />
+    </AssociationSet>
+    <AssociationSet Name="Decision_Has_Objeto" Association="Self.Decision_Has_Objeto">
+      <End Role="Decision" EntitySet="Decision" />
+      <End Role="Objeto" EntitySet="Objeto" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

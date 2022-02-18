@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DadsLastWeekModelStoreContainer" CdmEntityContainer="DadsLastWeekEntities">
+    <EntitySetMapping Name="Decision">
+      <EntityTypeMapping TypeName="DadsLastWeekModel.Decision">
+        <MappingFragment StoreEntitySet="Decision">
+          <ScalarProperty Name="Id_Decision" ColumnName="Id_Decision" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Dia" ColumnName="Dia" />
+          <ScalarProperty Name="Porcentaje_Salud" ColumnName="Porcentaje_Salud" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Evento_Final" ColumnName="Evento_Final" />
+          <ScalarProperty Name="Left" ColumnName="Left" />
+          <ScalarProperty Name="Right" ColumnName="Right" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dia">
+      <EntityTypeMapping TypeName="DadsLastWeekModel.Dia">
+        <MappingFragment StoreEntitySet="Dia">
+          <ScalarProperty Name="Id_Dia" ColumnName="Id_Dia" />
+          <ScalarProperty Name="Nom_Dia" ColumnName="Nom_Dia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estadistica">
+      <EntityTypeMapping TypeName="DadsLastWeekModel.Estadistica">
+        <MappingFragment StoreEntitySet="Estadistica">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Jugador" ColumnName="Jugador" />
+          <ScalarProperty Name="Nom_Personaje" ColumnName="Nom_Personaje" />
+          <ScalarProperty Name="Porcentaje_Salud" ColumnName="Porcentaje_Salud" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Decision_Final" ColumnName="Decision_Final" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jugador">
+      <EntityTypeMapping TypeName="DadsLastWeekModel.Jugador">
+        <MappingFragment StoreEntitySet="Jugador">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nom_Usuario" ColumnName="Nom_Usuario" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="Nom_Personaje" ColumnName="Nom_Personaje" />
+          <ScalarProperty Name="Dia" ColumnName="Dia" />
+          <ScalarProperty Name="Decision" ColumnName="Decision" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Objeto">
+      <EntityTypeMapping TypeName="DadsLastWeekModel.Objeto">
+        <MappingFragment StoreEntitySet="Objeto">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Decision_Has_Objeto" TypeName="DadsLastWeekModel.Decision_Has_Objeto" StoreEntitySet="Decision_Has_Objeto">
+      <EndProperty Name="Decision">
+        <ScalarProperty Name="Id_Decision" ColumnName="Id_Decision" />
+      </EndProperty>
+      <EndProperty Name="Objeto">
+        <ScalarProperty Name="Codigo" ColumnName="Cod_Objeto" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

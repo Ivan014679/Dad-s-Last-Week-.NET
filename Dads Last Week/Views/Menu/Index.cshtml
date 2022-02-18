@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Menú principal";
+    ViewBag.TipoContenedor = "contenedornormal";
+}
+
+<h2><font face="Old English Text MT">@ViewBag.Title</font></h2>
+<br />
+<div>
+    <button onclick="location.href='@Url.Action("Index", "Juego")'" class="btn">Iniciar juego</button>
+    <br /><br />
+    @using (Html.BeginForm("Index", "Juego", FormMethod.Post))
+    {
+        <button class="btn" name="DecisionTomada" value="@Convert.ToString(Session["decision"])">Continuar juego</button> <!-- No tocar, hay errores por corregir -->
+    }
+    <br />
+    <button class="btn">Estad&iacute;sticas</button> <!-- To do -->
+</div>

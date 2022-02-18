@@ -1,0 +1,34 @@
+﻿@model Dads_Last_Week.Models.JugadorModel
+@{
+    ViewBag.Title = "Crear cuenta";
+    ViewBag.TipoContenedor = "contenedornormal";
+}
+
+<h2><font face="Old English Text MT">Crear una cuenta</font></h2>
+
+@using (Html.BeginForm("CrearCuenta", "Jugador", FormMethod.Post))
+{
+    <div class="form-group" align="justify">
+        @Html.LabelFor(j => j.NombreUsuario)
+        @Html.TextBoxFor(j => j.NombreUsuario, new { @class = "form-control", @placeholder = "Ingrese un nombre de usuario" })
+        @Html.ValidationMessageFor(j => j.NombreUsuario, "", new { @class = "form-text text-danger" })
+    </div>
+    <div class="form-group" align="justify">
+        @Html.LabelFor(j => j.Contrasena)
+        @Html.TextBoxFor(j => j.Contrasena, new { @class = "form-control", @placeholder = "Ingrese una contraseña", @type = "password" })
+        @Html.ValidationMessageFor(j => j.Contrasena, "", new { @class = "form-text text-danger" })
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-sucess">Crear cuenta</button>
+    </div>
+}
+@{
+    if (!string.IsNullOrEmpty(ViewBag.mensaje))
+    {
+        <script>
+            alert('El registro fue exitoso.');
+            document.location = "Jugador/Index";
+        </script>
+    }
+}

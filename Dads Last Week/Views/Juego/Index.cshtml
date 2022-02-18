@@ -1,0 +1,36 @@
+﻿@model Dads_Last_Week.Models.DecisionModel
+@{
+    /**/
+
+    ViewBag.Title = "Historia";
+    ViewBag.TipoContenedor = "contenedorjuego";
+}
+
+    <h2><font face="Old English Text MT">@ViewBag.Dia</font></h2>
+    <br />
+    <div class="form-group">
+        <p align="justify"><font face="Georgia">
+        @{
+            string[] Texto = ViewBag.Decision.Texto.Replace("<br />", "|").Split('|');
+            for (int i = 0; i < Texto.Length; i++)
+            {
+                @Texto[i]
+                if (i != Texto.Length - 1)
+                {
+                    <br />
+                }
+            }
+        }
+        </font></p>
+    </div>
+    <br />
+    @using (Html.BeginForm("Index", "Juego", FormMethod.Post))
+    {
+        <button type="submit" name="DecisionTomada" value="@ViewBag.Decision.Left" class="btn">@ViewBag.Boton1</button>
+
+        if (!string.IsNullOrEmpty(ViewBag.Decision.Right))
+        {
+            <button type="submit" name="DecisionTomada" value="@ViewBag.Decision.Right" class="btn">@ViewBag.Boton2</button>
+        }
+    }
+
